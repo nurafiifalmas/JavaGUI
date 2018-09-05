@@ -197,8 +197,13 @@ int persent;
         clear.setBounds(20, 170, 70, 70);
 
         CE.setBackground(new java.awt.Color(0, 51, 204));
-        CE.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        CE.setText("Mod");
+        CE.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        CE.setText("CE");
+        CE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CEActionPerformed(evt);
+            }
+        });
         getContentPane().add(CE);
         CE.setBounds(100, 170, 70, 70);
 
@@ -540,6 +545,11 @@ a = Double.toString(b);
 Hasil.setText(""+b);
 ats.setText(" 1 / ("+a1+")");
     }//GEN-LAST:event_seperXActionPerformed
+
+    private void CEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CEActionPerformed
+ Hasil.setText("0");
+ a = "";
+    }//GEN-LAST:event_CEActionPerformed
 
     /**
      * @param args the command line arguments
